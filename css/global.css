@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+html, body {
+    height: 100%;
+}
+/*always add the above for landscaping purposes*/
+header {
+    background:rgb(200, 200, 200);
+    padding: 20px;
+    display:flex;
+    margin:0 auto;
+}
+#home {
+    color: red;
+}
+.header img {
+    visibility: 0.3;
+align-items:flex-end;
+}
+.section1 {
+    text-align: center;
+    align-items: flex-start;
+}
+main {
+    border: 1px solid red;
+    display:flex-column;
+    columns: 2;
+    /*height: 200px;*/
+}
+.section2 {
+    display:flex-column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.section2 div {
+    width: 100%;
+}
+#img1 {
+    display: flex;
+    flex: 3.5;
+}
+#img2 {
+    display: flex;
+    flex: 1.5;
+    /*padding: 20px;
+    padding-bottom:50px;*/
+}
+#img3 {
+    display: flex;
+    flex: 3.5;
+}
+#img4 {
+    display: flex;
+    flex: 1.5;
+}
+.section3 {
+    display:flex-column;
+    columns:4;
+}
