@@ -41,21 +41,38 @@ main {
 }
 #img1 {
     display: flex;
-    flex: 3.5;
+    /*flex: 3.5;*/
+    width:600px;
+    height: 300px;
 }
 #img2 {
     display: flex;
-    flex: 1.5;
+    /*flex: 1.5;*/
     /*padding: 20px;
     padding-bottom:50px;*/
+    width: 300px;
+    height: 200px;
 }
 #img3 {
     display: flex;
-    flex: 3.5;
+    /*flex: 3.5;*/
+    width: 300px;
+    height: 134px;
 }
 #img4 {
     display: flex;
-    flex: 1.5;
+    /*flex: 1.5;*/
+    width: 300px;
+    height: 200px;
+}
+#img5{
+    display: flex;
+    /*flex: 1.5;*/
+    width: 300px;
+    height: 251px;
+}
+#img1, #img2, #img3 {
+    display: flex-wrap;
 }
 .section3 {
     display:flex-column;
