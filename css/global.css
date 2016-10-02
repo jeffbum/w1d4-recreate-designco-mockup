@@ -2,79 +2,103 @@
     box-sizing: border-box;
 }
 img {
-    width: 100%;
+    width:100%;
 }
-html, body {
-    height: 100%;
-}
-/*always add the above for landscaping purposes*/
 header {
-    background:rgb(200, 200, 200);
-    padding: 20px;
-    display:flex;
-    margin:0 auto;
+  background: rgb(241, 233, 235);
+  background-position: center;
+  border-top: 2px solid red;
+  position: fixed;
+  width:100%;
+  margin:0 auto;
+}
+header > div {
+  display: inline-block;
+  align-items: center;
+  padding:10px;
+}
+header > #designco {
+  margin-right: 25px;
+  margin-left: 25px;
+  width:100px;
+  height:40px;
+}
 }
 #home {
-    color: red;
+  color:red;
 }
-.header img {
-    visibility: 0.3;
-align-items:flex-end;
+#search {
+  float:right;
+  margin-right: 50px;
+  width:40px;
+  height:15px;
 }
-.section1 {
-    text-align: center;
-    align-items: flex-start;
+.grid {
+  margin: 0 auto;
+  width: 96vw;
+  display: flex;
 }
-main {
-    border: 1px solid red;
-    display:flex-column;
-    columns: 2;
-    /*height: 200px;*/
+
+.grid img {
+  width: 100%;
 }
-.section2 {
-    display:flex-column;
-    justify-content: center;
-    margin: 0 auto;
+.grid img:hover {
+  opacity: 0.4;
 }
-.section2 div {
-    width: 100%;
+
+.grid__column {
+  display: flex;
+  padding-right: 1.3vw;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
-#img1 {
-    display: flex;
-    /*flex: 3.5;*/
-    width:600px;
-    height: 300px;
+
+.grid__column:last-child {
+  padding: 0;
 }
-#img2 {
-    display: flex;
-    /*flex: 1.5;*/
-    /*padding: 20px;
-    padding-bottom:50px;*/
-    width: 300px;
-    height: 200px;
+
+.grid__column--two-thirds {
+  flex: 1.99;
 }
-#img3 {
-    display: flex;
-    /*flex: 3.5;*/
-    width: 300px;
-    height: 134px;
+
+.grid__column--one-third {
+  flex: 1.01;
 }
-#img4 {
-    display: flex;
-    /*flex: 1.5;*/
-    width: 300px;
-    height: 200px;
+
+.grid__item {
+  padding-bottom: 1vw;
 }
-#img5{
-    display: flex;
-    /*flex: 1.5;*/
-    width: 300px;
-    height: 251px;
+
+.grid__item--full {
+  min-width: 100%;
+  flex: 3;
 }
-#img1, #img2, #img3 {
-    display: flex-wrap;
+
+.grid__item--one-third {
+  flex: 1.2;
+  padding-right: 1vw;
 }
-.section3 {
-    display:flex-column;
-    columns:4;
+
+.grid__item--two-thirds {
+  flex: 1.8;
+}
+footer {
+  column-count: 4;
+  width:100%;
+  height: 500px;
+  overflow:inherit;
+}
+#leftsection {
+  margin-bottom: 120px;
+  float:left;
+}
+#rightsection {
+  float:right;
+}
+#new {
+  color:red;
+  font-size: 20px;
+}
+#strong {
+  font-size: 20px;
 }
